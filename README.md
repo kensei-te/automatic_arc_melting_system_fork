@@ -1,6 +1,8 @@
 # Automatic Arc Melting System
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Journal](https://img.shields.io/badge/STAM%3A%20Methods-published-green.svg)](https://doi.org/10.1080/27660400.2025.2611510)
+[![DOI](https://img.shields.io/badge/DOI-10.1080%2F27660400.2025.2611510-blue.svg)](https://doi.org/10.1080/27660400.2025.2611510)
 [![arXiv](https://img.shields.io/badge/arXiv-2509.12011-b31b1b.svg)](https://arxiv.org/abs/2509.12011)
 
 An automated control system built on **ROS2 (Robot Operating System 2)** designed for the synthesis of bulk intermetallic compounds. This project orchestrates heterogeneous experimental hardware to streamline the arc melting process.
@@ -9,7 +11,10 @@ An automated control system built on **ROS2 (Robot Operating System 2)** designe
 
 The technical methodology and experimental results of this system are detailed in the following paper:
 
-> **Orchestration of Heterogeneous Experimental Machines via ROS2 for Automated Bulk Intermetallic Synthesis** > *Wei-Sheng Wang, Kensei Terashima, and Yoshihiko Takano* > **Link:** [arXiv:2509.12011](https://arxiv.org/abs/2509.12011)
+> **Orchestration of Heterogeneous Experimental Machines via ROS2 for Automated Bulk Intermetallic Synthesis** > *Wei-Sheng Wang, Kensei Terashima, and Yoshihiko Takano*
+> 
+> **Published in STAM:Methods:** https://doi.org/10.1080/27660400.2025.2611510  
+> **Preprint:** [arXiv:2509.12011](https://arxiv.org/abs/2509.12011)
 
 
 ---
@@ -19,9 +24,15 @@ The technical methodology and experimental results of this system are detailed i
 This repository contains the control software for an automated arc-melting synthesis system built on **ROS 2**.  
 The core idea is to model each device (e.g., motion stages, weighing, PLC interlocks, robotic manipulator, etc.) as a ROS 2 component and orchestrate them into safe, repeatable synthesis workflows.
 
-If you use this software in academic work, please cite the paper linked above.
+The source code corresponding to the published manuscript (https://doi.org/10.1080/27660400.2025.2611510) is available in the `publication-code-2026-01` branch.
+
+If you use this software in academic, industrial, or commercial work, please cite the paper linked above.
+
+This software is released under the MIT License and may be used, modified, and distributed for both academic and commercial purposes.
 
 ---
+
+
 
 ## Key Features
 
