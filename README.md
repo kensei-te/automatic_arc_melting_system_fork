@@ -88,12 +88,13 @@ ros2 launch [package_name] [launch_file_name].py
 
 ## Optional
 
-A streamlit GUI application can be used to generate a sequence from input parameters for synthesis, and to start execution of operation.
-To use this app, additional installation of 'Streamlit' and 'PymatGen' is required.
-After installation, Edit `streamlit_config.json` according to your environment.
+A Streamlit -based GUI application (st_arc_control.py) is available for generating a synthesis sequence from input parameters, and for initiating the operation.
+To use this application, additional installation of **Streamlit** and **Pymatgen** (tested with streamlit 1.36.0 and pymatgen 2023.8.10) is required.
+  
+After installation, edit `streamlit_config.json` according to your environment.
 
 - `files.stock.path`  
-  Path to `stock.txt`, where 
+  Path to `stock.txt`, where the correpondence between the stock positions and contained raw materials of atomic elements are provided.
 
 - `files.sequence.dir`  
   Directory where a sequence file will be generated
