@@ -85,3 +85,33 @@ This software is released under the MIT License and may be used, modified, and d
 To launch the system orchestration:
 ```bash
 ros2 launch [package_name] [launch_file_name].py
+```
+
+## Optional
+
+A streamlit GUI application can be used to generate a sequence from input parameters for synthesis.
+To use this app, additional installation of 'Streamlit' and 'PymatGen' is required.
+After installation, Edit `streamlit_config.json` according to your environment.
+
+- `files.stock.path`  
+  Path to `stock.txt`, where 
+
+- `files.sequence.dir`  
+  Directory where a sequence file will be generated
+
+- `files.sequence.filename`  
+  Name of the sequence file. Make sure that the corresponding sequence filename is given in the /src/main_process/include/proces_control.hpp.
+
+- `ros2.setup_bash`  
+  Absolute path to your ROS2 `setup.bash`
+
+After editing appropriate envirnmental parameters, launch the system orchestration first by 
+```bash
+ros2 launch [package_name] [launch_file_name].py
+```
+, then 
+```bash
+streamlit run st_arc_control.py
+```
+on another terminal
+
