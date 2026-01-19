@@ -1,8 +1,7 @@
 # Automatic Arc Melting System
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Journal](https://img.shields.io/badge/STAM%3A%20Methods-published-green.svg)](https://doi.org/10.1080/27660400.2025.2611510)
-[![DOI](https://img.shields.io/badge/DOI-10.1080%2F27660400.2025.2611510-blue.svg)](https://doi.org/10.1080/27660400.2025.2611510)
+[![Journal: STAM Methods | DOI](https://img.shields.io/badge/STAM%3A%20Methods-10.1080%2F27660400.2025.2611510-green)](https://doi.org/10.1080/27660400.2025.2611510)
 [![arXiv](https://img.shields.io/badge/arXiv-2509.12011-b31b1b.svg)](https://arxiv.org/abs/2509.12011)
 
 An automated control system built on **ROS2 (Robot Operating System 2)** designed for the synthesis of bulk intermetallic compounds. This project orchestrates heterogeneous experimental hardware to streamline the arc melting process.
@@ -114,5 +113,5 @@ ros2 launch [package_name] [launch_file_name].py
 streamlit run st_arc_control.py
 ```
 on another terminal to run streamlit app.
-> ⚠️ **Safety note:** This code controls real experimental hardware.  Be sure to what will occur, and be ready for emergency stop.
+⚠️ **Safety note again:** This code controls real experimental hardware.  Be sure to what will occur, and be ready for emergency stop.
 
