@@ -89,7 +89,7 @@ ros2 launch [package_name] [launch_file_name].py
 
 ## Optional
 
-A streamlit GUI application can be used to generate a sequence from input parameters for synthesis.
+A streamlit GUI application can be used to generate a sequence from input parameters for synthesis, and to start execution of operation.
 To use this app, additional installation of 'Streamlit' and 'PymatGen' is required.
 After installation, Edit `streamlit_config.json` according to your environment.
 
@@ -105,7 +105,7 @@ After installation, Edit `streamlit_config.json` according to your environment.
 - `ros2.setup_bash`  
   Absolute path to your ROS2 `setup.bash`
 
-After editing appropriate envirnmental parameters, launch the system orchestration first by 
+After editing appropriate environmental parameters, launch the system orchestration first by 
 ```bash
 ros2 launch [package_name] [launch_file_name].py
 ```
@@ -113,5 +113,6 @@ ros2 launch [package_name] [launch_file_name].py
 ```bash
 streamlit run st_arc_control.py
 ```
-on another terminal
+on another terminal to run streamlit app.
+> ⚠️ **Safety note:** This code controls real experimental hardware.  Be sure to what will occur, and be ready for emergency stop.
 
