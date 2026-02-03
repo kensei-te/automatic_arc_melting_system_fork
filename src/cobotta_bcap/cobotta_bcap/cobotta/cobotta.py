@@ -178,6 +178,33 @@ class cobotta:
 
     #     return False  # タイムアウト
 
+    # def runTask(self, task, start_timeout=5.0, finish_timeout=300.0, poll=0.05):
+    #     if self.taskHandle == 0:
+    #         self.taskHandle = self.bcap.controller_gettask(self.hCtrl, task, "")
+
+    #     self.bcap.task_start(self.taskHandle, 1, "")# start task
+    #     saw_running = False
+
+    #     t_start = time.time()# wait until it becomes running (st==3)
+    #     while time.time() - t_start < finish_timeout:
+    #         st1 = self.bcap.task_execute(self.taskHandle, "GetStatus")
+
+    #         if st1 == 3:
+    #             # 動作中
+    #             saw_running = True
+    #         else:
+    #             if saw_running or task == self.TASK_INIT:
+    #                 # 一度は RUNNING を確認済み → standby 判定フェーズ
+    #                 time.sleep(0.5)
+    #                 st2 = self.bcap.task_execute(self.taskHandle, "GetStatus")
+    #                 if st2 != 3:
+    #                     # 0秒と0.5秒後ともに standby → 完了確定
+    #                     return True
+    #                 # st2==3 ならまだ動作中 → 続行
+    #         time.sleep(poll)
+
+    #     return False  # タイムアウト
+
     def changeValue(self, ioNum, value):
         # get I[1] Object Handl
         
